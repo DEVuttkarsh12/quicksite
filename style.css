@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,133 +7,138 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f9fafb;
-  color: #333;
+  background-color: #f8f9fc;
+  color: #2d2d2d;
   line-height: 1.6;
 }
 
+/* Hero */
 .hero {
-  background: white;
-  padding: 4rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 5rem 2rem 4rem;
+  background: linear-gradient(135deg, #2e86de, #3a99f7);
+  color: white;
+  animation: fadeSlide 1s ease-in;
 }
 
 .hero h1 {
   font-size: 3rem;
-  color: #2e86de;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0.5rem;
 }
 
-.tagline {
+.hero p {
   font-size: 1.2rem;
-  color: #555;
   margin-bottom: 1.5rem;
 }
 
-.section {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #2e86de;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.feature-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
+/* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
   font-weight: bold;
-  border-radius: 8px;
   text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .primary {
-  background: #2e86de;
-  color: white;
-  border: none;
+  background-color: white;
+  color: #2e86de;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .primary:hover {
-  background: #1c5fb4;
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
 }
 
 .secondary {
   background: transparent;
-  border: 2px solid #2e86de;
   color: #2e86de;
+  border: 2px solid #2e86de;
 }
 
 .secondary:hover {
-  background: #e0efff;
+  background-color: #e1f0ff;
 }
 
-.pricing-box {
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.price-box {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .qr {
-  width: 160px;
   margin-top: 1rem;
+  width: 160px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
-.testimonials {
-  background: #ffffff;
-}
-
-.testimonial-box {
-  background: #f1f8ff;
-  max-width: 600px;
+.testimonials blockquote {
+  background: #f0f8ff;
   margin: 1rem auto;
-  padding: 1rem 2rem;
+  max-width: 600px;
+  padding: 1rem 1.5rem;
   border-left: 4px solid #2e86de;
-  border-radius: 6px;
   font-style: italic;
+  border-radius: 6px;
 }
 
 form {
-  background: white;
-  padding: 2rem;
   max-width: 500px;
   margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 input,
 textarea {
   width: 100%;
   padding: 0.75rem;
-  margin: 0.6rem 0;
-  border: 1px solid #ccc;
+  margin-top: 1rem;
   border-radius: 6px;
+  border: 1px solid #ccc;
   font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2e86de;
+  outline: none;
 }
 
 button {
@@ -140,10 +146,21 @@ button {
   width: 100%;
 }
 
-.footer {
+footer {
   background: #222;
-  color: #eee;
-  text-align: center;
+  color: white;
   padding: 1rem;
-  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

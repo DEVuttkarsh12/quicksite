@@ -3,66 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickSite — Website in 24 Hours</title>
+    <title>QuickSite — Websites in 24 Hours</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/3600/3600918.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- Header / Hero -->
-    <header class="hero">
+    <!-- Hero -->
+    <header class="hero" data-aos="fade-up">
       <h1>QuickSite</h1>
-      <p class="tagline">Launch Your Website in 24 Hours</p>
+      <p>Launch your stunning website in just 24 hours</p>
       <a href="#contact" class="btn primary">Get Started</a>
     </header>
 
-    <!-- Features Section -->
-    <section class="section">
-      <h2 class="section-title">What’s Included</h2>
-      <div class="features-grid">
-        <div class="feature-card">Custom One-Page Website</div>
-        <div class="feature-card">Mobile Responsive Design</div>
-        <div class="feature-card">WhatsApp Contact Button</div>
-        <div class="feature-card">UPI QR Payment Setup</div>
+    <!-- Features -->
+    <section class="section" data-aos="fade-up">
+      <h2>What You Get</h2>
+      <div class="features">
+        <div class="card">✔ Custom One-Page Website</div>
+        <div class="card">✔ Mobile Responsive Design</div>
+        <div class="card">✔ WhatsApp Contact Button</div>
+        <div class="card">✔ UPI Payment Integration</div>
       </div>
     </section>
 
-    <!-- Demo Button -->
-    <section class="section">
-      <h2 class="section-title">See My Work</h2>
-      <a href="demo/index.html" class="btn secondary">View Demo Websites</a>
+    <!-- Demo -->
+    <section class="section" data-aos="zoom-in">
+      <h2>Explore Our Work</h2>
+      <a href="demo/index.html" class="btn secondary">View Demo Sites</a>
     </section>
 
     <!-- Pricing -->
-    <section class="section">
-      <h2 class="section-title">Affordable Pricing</h2>
-      <div class="pricing-box">
-        <p><strong>Only ₹299</strong> — complete site delivered fast</p>
-        <img src="./assets/qr-upi.png" alt="Pay with UPI QR" class="qr" />
+    <section class="section" data-aos="fade-up">
+      <h2>Simple Pricing</h2>
+      <div class="price-box">
+        <p><strong>Only ₹299</strong> — complete professional website</p>
+        <img src="./assets/qr-upi.png" alt="UPI QR Code" class="qr" />
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="section testimonials">
-      <h2 class="section-title">Happy Clients</h2>
-      <div class="testimonial-box">
-        <p>
-          “QuickSite gave me a clean portfolio site in just 1 day. Loved the
-          service!”
-        </p>
-      </div>
-      <div class="testimonial-box">
-        <p>
-          “Perfect for my small business — fast delivery and great quality!”
-        </p>
-      </div>
+    <section class="section testimonials" data-aos="fade-up">
+      <h2>What Clients Say</h2>
+      <blockquote>
+        “I never thought I could get such a good-looking site for so cheap.
+        Amazing service!”
+      </blockquote>
+      <blockquote>
+        “QuickSite helped launch my startup overnight. Super clean, responsive,
+        and fast.”
+      </blockquote>
     </section>
 
     <!-- Contact Form -->
-    <section class="section contact" id="contact">
-      <h2 class="section-title">Order Now</h2>
+    <section class="section contact" id="contact" data-aos="fade-up">
+      <h2>Order Your Site</h2>
       <form id="contact-form">
         <input type="text" name="user_name" placeholder="Your Name" required />
         <input
@@ -73,19 +76,22 @@
         />
         <textarea
           name="message"
-          placeholder="What type of website do you want?"
+          placeholder="What type of site do you want?"
           required
         ></textarea>
-        <button type="submit" class="btn primary">Submit Request</button>
+        <button type="submit" class="btn primary">Submit</button>
       </form>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
       <p>© 2025 QuickSite by Uttkarsh Bhardwaj. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
     <script src="contact/contact.js"></script>
   </body>
 </html>
