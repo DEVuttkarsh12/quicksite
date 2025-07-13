@@ -3,63 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickSite | Your Website in 24 Hours</title>
+    <title>QuickSite — Website in 24 Hours</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Header -->
+    <!-- Header / Hero -->
     <header class="hero">
       <h1>QuickSite</h1>
-      <p>Your Website in 24 Hours</p>
-      <a href="#contact" class="btn-primary">Order Now</a>
+      <p class="tagline">Launch Your Website in 24 Hours</p>
+      <a href="#contact" class="btn primary">Get Started</a>
     </header>
 
-    <!-- Features -->
+    <!-- Features Section -->
     <section class="section">
-      <h2>What You Get</h2>
-      <div class="features">
-        <div class="card">1-Page Custom Website</div>
-        <div class="card">Mobile Responsive</div>
-        <div class="card">WhatsApp Button</div>
-        <div class="card">UPI Payment Integration</div>
+      <h2 class="section-title">What’s Included</h2>
+      <div class="features-grid">
+        <div class="feature-card">Custom One-Page Website</div>
+        <div class="feature-card">Mobile Responsive Design</div>
+        <div class="feature-card">WhatsApp Contact Button</div>
+        <div class="feature-card">UPI QR Payment Setup</div>
       </div>
     </section>
 
-    <!-- Demo -->
-    <section class="section" id="demo">
-      <h2>Live Demos</h2>
-      <a href="demo/index.html" class="btn-secondary">View All Demo Websites</a>
+    <!-- Demo Button -->
+    <section class="section">
+      <h2 class="section-title">See My Work</h2>
+      <a href="demo/index.html" class="btn secondary">View Demo Websites</a>
     </section>
 
     <!-- Pricing -->
-    <section class="section pricing">
-      <h2>Affordable Pricing</h2>
-      <div class="price-box">
-        <p>
-          <strong>Just ₹299</strong> – Full site with contact form + WhatsApp
-        </p>
-        <img src="./assets/qr-upi.png" alt="UPI QR" class="qr" />
+    <section class="section">
+      <h2 class="section-title">Affordable Pricing</h2>
+      <div class="pricing-box">
+        <p><strong>Only ₹299</strong> — complete site delivered fast</p>
+        <img src="./assets/qr-upi.png" alt="Pay with UPI QR" class="qr" />
       </div>
     </section>
 
     <!-- Testimonials -->
     <section class="section testimonials">
-      <h2>What People Say</h2>
-      <blockquote>
-        “I got my site in just 1 day — so clean and professional!”
-      </blockquote>
-      <blockquote>
-        “QuickSite made my first business website look premium!”
-      </blockquote>
+      <h2 class="section-title">Happy Clients</h2>
+      <div class="testimonial-box">
+        <p>
+          “QuickSite gave me a clean portfolio site in just 1 day. Loved the
+          service!”
+        </p>
+      </div>
+      <div class="testimonial-box">
+        <p>
+          “Perfect for my small business — fast delivery and great quality!”
+        </p>
+      </div>
     </section>
 
     <!-- Contact Form -->
     <section class="section contact" id="contact">
-      <h2>Order Your Site</h2>
+      <h2 class="section-title">Order Now</h2>
       <form id="contact-form">
         <input type="text" name="user_name" placeholder="Your Name" required />
         <input
@@ -70,16 +73,16 @@
         />
         <textarea
           name="message"
-          placeholder="What type of site do you want?"
+          placeholder="What type of website do you want?"
           required
         ></textarea>
-        <button type="submit" class="btn-primary">Submit</button>
+        <button type="submit" class="btn primary">Submit Request</button>
       </form>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>© 2025 QuickSite by Uttkarsh Bhardwaj | All rights reserved</p>
+    <footer class="footer">
+      <p>© 2025 QuickSite by Uttkarsh Bhardwaj. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
