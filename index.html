@@ -6,66 +6,60 @@
     <title>QuickSite — Websites in 24 Hours</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="shortcut icon"
-      href="https://cdn-icons-png.flaticon.com/512/3600/3600918.png"
-      type="image/x-icon"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- Hero -->
-    <header class="hero" data-aos="fade-up">
-      <h1>QuickSite</h1>
-      <p>Launch your stunning website in just 24 hours</p>
+    <!-- ✅ Navbar -->
+    <nav class="navbar">
+      <div class="logo">QuickSite</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <header id="hero" class="hero" data-aos="fade-up">
+      <h1>Launch Your Website in 24 Hours</h1>
+      <p>Affordable. Responsive. Beautiful.</p>
       <a href="#contact" class="btn primary">Get Started</a>
     </header>
 
-    <!-- Features -->
-    <section class="section" data-aos="fade-up">
-      <h2>What You Get</h2>
-      <div class="features">
-        <div class="card">✔ Custom One-Page Website</div>
-        <div class="card">✔ Mobile Responsive Design</div>
-        <div class="card">✔ WhatsApp Contact Button</div>
-        <div class="card">✔ UPI Payment Integration</div>
+    <!-- ✅ Features -->
+    <section id="features" class="section" data-aos="fade-up">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card">⚡ Fast 1-Day Delivery</div>
+        <div class="card">📱 Mobile Responsive</div>
+        <div class="card">💳 UPI Payment Setup</div>
+        <div class="card">💬 WhatsApp Integration</div>
       </div>
     </section>
 
-    <!-- Demo -->
-    <section class="section" data-aos="zoom-in">
-      <h2>Explore Our Work</h2>
-      <a href="demo/index.html" class="btn secondary">View Demo Sites</a>
-    </section>
-
-    <!-- Pricing -->
-    <section class="section" data-aos="fade-up">
-      <h2>Simple Pricing</h2>
-      <div class="price-box">
-        <p><strong>Only ₹299</strong> — complete professional website</p>
-        <img src="./assets/qr-upi.png" alt="UPI QR Code" class="qr" />
+    <!-- ✅ Pricing -->
+    <section id="pricing" class="section" data-aos="fade-up">
+      <h2>Pricing</h2>
+      <div class="pricing-box">
+        <p><strong>Only ₹299</strong></p>
+        <img src="assets/qr-upi.png" alt="UPI QR" class="qr" />
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section testimonials" data-aos="fade-up">
-      <h2>What Clients Say</h2>
-      <blockquote>
-        “I never thought I could get such a good-looking site for so cheap.
-        Amazing service!”
-      </blockquote>
-      <blockquote>
-        “QuickSite helped launch my startup overnight. Super clean, responsive,
-        and fast.”
-      </blockquote>
+    <!-- ✅ Demos -->
+    <section id="demos" class="section" data-aos="fade-up">
+      <h2>View Our Work</h2>
+      <a href="demo/index.html" class="btn secondary">See Demo Websites</a>
     </section>
 
-    <!-- Contact Form -->
-    <section class="section contact" id="contact" data-aos="fade-up">
-      <h2>Order Your Site</h2>
+    <!-- ✅ Contact -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact Us</h2>
       <form id="contact-form">
         <input type="text" name="user_name" placeholder="Your Name" required />
         <input
@@ -76,15 +70,15 @@
         />
         <textarea
           name="message"
-          placeholder="What type of site do you want?"
+          placeholder="Describe your website needs..."
           required
         ></textarea>
         <button type="submit" class="btn primary">Submit</button>
       </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- ✅ Footer -->
+    <footer class="footer">
       <p>© 2025 QuickSite by Uttkarsh Bhardwaj. All rights reserved.</p>
     </footer>
 
