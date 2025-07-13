@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickSite | Your Website in 24 Hours</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="hero">
+      <h1>QuickSite</h1>
+      <p>Your Website in 24 Hours</p>
+      <a href="#contact" class="btn-primary">Order Now</a>
+    </header>
+
+    <!-- Features -->
+    <section class="section">
+      <h2>What You Get</h2>
+      <div class="features">
+        <div class="card">1-Page Custom Website</div>
+        <div class="card">Mobile Responsive</div>
+        <div class="card">WhatsApp Button</div>
+        <div class="card">UPI Payment Integration</div>
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section class="section" id="demo">
+      <h2>Live Demos</h2>
+      <a href="demo/index.html" class="btn-secondary">View All Demo Websites</a>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section pricing">
+      <h2>Affordable Pricing</h2>
+      <div class="price-box">
+        <p>
+          <strong>Just ₹299</strong> – Full site with contact form + WhatsApp
+        </p>
+        <img src="./assets/qr-upi.png" alt="UPI QR" class="qr" />
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <h2>What People Say</h2>
+      <blockquote>
+        “I got my site in just 1 day — so clean and professional!”
+      </blockquote>
+      <blockquote>
+        “QuickSite made my first business website look premium!”
+      </blockquote>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section contact" id="contact">
+      <h2>Order Your Site</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Your Name" required />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="What type of site do you want?"
+          required
+        ></textarea>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 QuickSite by Uttkarsh Bhardwaj | All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="contact/contact.js"></script>
+  </body>
+</html>
